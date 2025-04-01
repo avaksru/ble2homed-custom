@@ -1,0 +1,16 @@
+{
+  "luci-app-ble2homed-custom":
+  {
+    "description": "Grant access to /etc/ble2homed-custom/config.json",
+    "read":
+    {
+      "file": {"/etc/ble2homed-custom/config.json": ["read"]},
+      "ubus": {"file": ["read"]}
+    },
+    "write":
+    {
+      "file": {"/etc/ble2homed-custom/config.json": ["write"]},
+      "ubus": {"file": ["write"]}
+    }
+  }
+}
